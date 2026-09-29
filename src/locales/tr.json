@@ -1,0 +1,174 @@
+{
+  "navbar": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "skills": "Yetenekler",
+    "experience": "Deneyim",
+    "projects": "Projeler",
+    "testimonials": "Referanslar",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "badge": "Front-End Geliştirici",
+    "greeting": "Merhaba, ben",
+    "name": "Nima",
+    "role": "Front-End Geliştirici",
+    "description": "React, Next.js ve modern web teknolojilerini kullanarak modern, duyarlı ve kullanıcı dostu web uygulamaları geliştiriyorum.",
+    "contactButton": "İletişime Geç",
+    "resumeButton": "CV İndir",
+    "scrollDown": "Aşağı Kaydır"
+  },
+  "about": {
+    "subtitle": "Hakkımda",
+    "title": "Fikirleri Dijital Deneyimlere Dönüştürüyorum",
+    "heading": "Modern Web Uygulamaları Geliştirmeye Tutkulu Bir Front-End Geliştirici",
+    "description1": "Bilgisayar Mühendisliği öğrencisi ve Front-End Geliştiricisiyim. Ana odağım modern, duyarlı ve kullanıcı dostu web uygulamaları geliştirmektir.",
+    "description2": "Temel teknolojilerim arasında JavaScript, TypeScript, React, Next.js, Tailwind CSS ve modern front-end geliştirme araçları bulunmaktadır. Fikirleri ve tasarımları temiz ve etkileşimli kullanıcı arayüzlerine dönüştürmekten keyif alıyorum.",
+    "description3": "Akademik, kişisel ve gerçek dünya projeleri üzerinden sürekli olarak öğreniyor ve becerilerimi geliştiriyorum. Problem çözmeyi, yeni teknolojiler öğrenmeyi ve işlevsel ve görsel açıdan etkileyici web deneyimleri oluşturmayı seviyorum.",
+    "features": {
+      "cleanCode": {
+        "title": "Temiz Kod",
+        "description": "Modern geliştirme yöntemlerini takip ederek temiz, sürdürülebilir ve yeniden kullanılabilir kod yazmak."
+      },
+      "problemSolving": {
+        "title": "Problem Çözme",
+        "description": "Karmaşık problemleri basit ve uygulanabilir çözümlere dönüştürmek."
+      },
+      "performance": {
+        "title": "Performans",
+        "description": "Hızlı, duyarlı ve optimize edilmiş web uygulamaları geliştirmek."
+      },
+      "collaboration": {
+        "title": "İş Birliği",
+        "description": "Geliştiriciler, tasarımcılar ve diğer ekip üyeleriyle etkili bir şekilde çalışmak."
+      }
+    }
+  },
+  "skills": {
+    "subtitle": "Yeteneklerim",
+    "title": "Kullandığım Teknolojiler",
+    "description": "Modern ve ölçeklenebilir web uygulamaları geliştirmek için kullandığım bazı teknoloji ve araçlar."
+  },
+  "experience": {
+    "subtitle": "Yolculuğum",
+    "title": "Deneyim ve Eğitim",
+    "frontendIntern": {
+      "title": "Front-End Stajyeri",
+      "company": "Staj",
+      "period": "2024 - 2025",
+      "description": "Front-end geliştirme görevlerinde çalıştım ve duyarlı ve etkileşimli web arayüzleri oluşturma konusunda pratik deneyim kazandım."
+    },
+    "juniorDeveloper": {
+      "title": "Junior Programcı",
+      "company": "Yazılım Geliştirme",
+      "period": "2025 - 2026",
+      "description": "Kişisel ve pratik projeler üzerinde çalışırken modern web geliştirme, problem çözme ve yazılım mühendisliği alanlarında becerilerimi geliştirdim."
+    },
+    "university": {
+      "title": "Bilgisayar Mühendisliği",
+      "company": "Tebriz Üniversitesi",
+      "period": "2024 - Günümüz",
+      "description": "Bilgisayar Mühendisliği okuyorum ve programlama, algoritmalar, yazılım mühendisliği ve bilgisayar bilimi alanlarında güçlü bir temel oluşturuyorum."
+    },
+    "programmingCourse": {
+      "title": "Programlama Kursu",
+      "company": "Tebriz Teknik Kompleksi",
+      "period": "2024",
+      "description": "Pratik programlama ve yazılım geliştirme becerilerimi güçlendirmeye odaklanan bir programlama kursunu tamamladım."
+    },
+    "mathPhysics": {
+      "title": "Matematik ve Fizik",
+      "company": "Lise",
+      "period": "2021 - 2024",
+      "description": "Analitik düşünme, problem çözme ve üniversite eğitimine hazırlanmaya odaklanarak matematik ve fizik eğitimi aldım."
+    }
+  },
+  "projects": {
+    "subtitle": "Çalışmalarım",
+    "title": "Öne Çıkan Projeler",
+    "description": "Modern teknolojileri kullanarak üzerinde çalıştığım bazı projeler.",
+    "viewProject": "Projeyi Görüntüle",
+    "viewCode": "Kodu Görüntüle",
+    "liveDemo": "Canlı Demo",
+    "foodOrder": {
+      "title": "Yemek Sipariş Web Uygulaması",
+      "description": "Duyarlı kullanıcı arayüzüne ve etkileşimli sipariş deneyimine sahip modern bir yemek sipariş web uygulaması."
+    },
+    "ecommerce": {
+      "title": "E-Ticaret Platformu",
+      "description": "Ürün yönetimi, alışveriş sepeti, ödeme entegrasyonu ve duyarlı tasarıma sahip modern bir e-ticaret platformu."
+    },
+    "aiWriting": {
+      "title": "Yapay Zeka Yazma Asistanı",
+      "description": "Kullanıcıların yazılı içerik oluşturmasına, geliştirmesine ve yönetmesine yardımcı olmak için tasarlanmış yapay zeka destekli bir yazma asistanı."
+    },
+    "projectManagement": {
+      "title": "Proje Yönetim Aracı",
+      "description": "Ekiplerin görevleri organize etmesine, iş birliği yapmasına ve projeleri verimli bir şekilde yönetmesine yardımcı olmak için tasarlanmış bir proje yönetim uygulaması."
+    }
+  },
+  "testimonials": {
+    "subtitle": "Referanslar",
+    "title": "İnsanlar Ne Diyor?",
+    "description": "Birlikte çalışma fırsatı bulduğum insanlardan gelen geri bildirimler.",
+    "cto": {
+      "name": "Alex Johnson",
+      "role": "CTO",
+      "text": "Nima, teknik becerilerini geliştirmek ve temiz çözümler sunmak için sürekli çalışan, motive bir geliştiricidir."
+    },
+    "productManager": {
+      "name": "Sarah Williams",
+      "role": "Ürün Yöneticisi",
+      "text": "Nima ile çalışmak harika bir deneyimdi. Gereksinimleri iyi anlıyor ve fikirleri pratik arayüzlere dönüştürüyor."
+    },
+    "frontendDeveloper": {
+      "name": "Daniel Smith",
+      "role": "Front-End Geliştirici",
+      "text": "Nima, front-end geliştirmeye güçlü bir ilgi duyuyor ve yeni teknolojiler öğrenmeye ve kodunu geliştirmeye her zaman istekli."
+    },
+    "backendDeveloper": {
+      "name": "Michael Brown",
+      "role": "Back-End Geliştirici",
+      "text": "Nima ile iletişim ve iş birliği oldukça sorunsuzdu. Detaylara dikkat ediyor ve front-end ile back-end arasındaki bağlantıyı iyi anlıyor."
+    },
+    "uiuxDesigner": {
+      "name": "Emma Davis",
+      "role": "UI/UX Tasarımcısı",
+      "text": "Nima, tasarımları duyarlı ve etkileşimli kullanıcı arayüzlerine dönüştürme konusunda başarılı ve kullanıcı deneyimini göz önünde bulunduruyor."
+    }
+  },
+  "contact": {
+    "subtitle": "İletişime Geç",
+    "title": "Birlikte Çalışalım",
+    "description": "Aklınızda bir proje mi var veya bir iş fırsatı hakkında konuşmak mı istiyorsunuz? Benimle iletişime geçmekten çekinmeyin.",
+    "form": {
+      "name": "Adınız",
+      "email": "E-posta Adresiniz",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "send": "Mesaj Gönder",
+      "sending": "Gönderiliyor...",
+      "success": "Mesajınız başarıyla gönderildi!",
+      "error": "Bir şeyler yanlış gitti. Lütfen tekrar deneyin."
+    },
+    "info": {
+      "email": "E-posta",
+      "phone": "Telefon",
+      "location": "Konum",
+      "locationValue": "Tebriz, İran"
+    }
+  },
+  "footer": {
+    "description": "Modern ve kullanıcı dostu web deneyimleri oluşturmaya tutkuyla bağlı Front-End Geliştirici.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "socialLinks": "Sosyal Bağlantılar",
+    "copyright": "Tüm hakları saklıdır."
+  },
+  "common": {
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "close": "Kapat",
+    "loading": "Yükleniyor...",
+    "language": "Dil"
+  }
+}

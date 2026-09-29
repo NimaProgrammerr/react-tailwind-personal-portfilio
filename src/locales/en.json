@@ -1,0 +1,201 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "badge": "Front-End Developer",
+    "greeting": "Hello, I'm",
+    "name": "Nima",
+    "role": "Front-End Developer",
+    "description": "I build modern, responsive, and user-friendly web applications using React, Next.js, and modern web technologies.",
+    "contactButton": "Contact Me",
+    "resumeButton": "Download CV",
+    "scrollDown": "Scroll Down"
+  },
+
+  "about": {
+    "subtitle": "About Me",
+    "title": "Turning Ideas Into Digital Experiences",
+    "heading": "A Front-End Developer Passionate About Building Modern Web Applications",
+    "description1": "I'm a Computer Engineering student and Front-End Developer focused on building modern, responsive, and user-friendly web applications.",
+    "description2": "My main technologies include JavaScript, TypeScript, React, Next.js, Tailwind CSS, and modern front-end development tools. I enjoy transforming ideas and designs into clean and interactive user interfaces.",
+    "description3": "I'm continuously learning and improving my skills through academic, personal, and real-world projects. I enjoy solving problems, learning new technologies, and creating web experiences that are both functional and visually appealing.",
+
+    "features": {
+      "cleanCode": {
+        "title": "Clean Code",
+        "description": "Writing clean, maintainable, and reusable code following modern development practices."
+      },
+      "problemSolving": {
+        "title": "Problem Solving",
+        "description": "Breaking complex problems into simple and practical solutions."
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Building fast, responsive, and optimized web applications."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Working effectively with developers, designers, and other team members."
+      }
+    }
+  },
+
+  "skills": {
+    "subtitle": "My Skills",
+    "title": "Technologies I Work With",
+    "description": "Here are some of the technologies and tools I use to build modern and scalable web applications."
+  },
+
+  "experience": {
+    "subtitle": "My Journey",
+    "title": "Experience & Education",
+
+    "frontendIntern": {
+      "title": "Front-End Intern",
+      "company": "Internship",
+      "period": "2024 - 2025",
+      "description": "Worked on front-end development tasks and gained practical experience building responsive and interactive web interfaces."
+    },
+
+    "juniorDeveloper": {
+      "title": "Junior Programmer",
+      "company": "Software Development",
+      "period": "2025 - 2026",
+      "description": "Worked on personal and practical projects while improving my skills in modern web development, problem solving, and software engineering."
+    },
+
+    "university": {
+      "title": "Computer Engineering",
+      "company": "University of Tabriz",
+      "period": "2024 - Present",
+      "description": "Studying Computer Engineering and developing a strong foundation in programming, algorithms, software engineering, and computer science."
+    },
+
+    "programmingCourse": {
+      "title": "Programming Course",
+      "company": "Technical Complex of Tabriz",
+      "period": "2024",
+      "description": "Completed a programming course focused on strengthening practical programming and software development skills."
+    },
+
+    "mathPhysics": {
+      "title": "Mathematics & Physics",
+      "company": "High School",
+      "period": "2021 - 2024",
+      "description": "Studied mathematics and physics with a focus on analytical thinking, problem solving, and preparation for university studies."
+    }
+  },
+
+  "projects": {
+    "subtitle": "My Work",
+    "title": "Featured Projects",
+    "description": "Here are some of the projects I've worked on using modern technologies.",
+
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "liveDemo": "Live Demo",
+
+    "foodOrder": {
+      "title": "Food Order Web Application",
+      "description": "A modern web application for ordering food with a responsive user interface and interactive ordering experience."
+    },
+
+    "ecommerce": {
+      "title": "E-Commerce Platform",
+      "description": "A modern e-commerce platform with product management, shopping cart functionality, payment integration, and responsive design."
+    },
+
+    "aiWriting": {
+      "title": "AI Writing Assistant",
+      "description": "An AI-powered writing assistant designed to help users generate, improve, and manage written content."
+    },
+
+    "projectManagement": {
+      "title": "Project Management Tool",
+      "description": "A project management application designed to help teams organize tasks, collaborate, and manage projects efficiently."
+    }
+  },
+
+  "testimonials": {
+    "subtitle": "Testimonials",
+    "title": "What People Say",
+    "description": "Feedback from people I've had the opportunity to work with.",
+
+    "cto": {
+      "name": "Alex Johnson",
+      "role": "CTO",
+      "text": "Nima is a motivated developer who consistently works to improve his technical skills and deliver clean solutions."
+    },
+
+    "productManager": {
+      "name": "Sarah Williams",
+      "role": "Product Manager",
+      "text": "Working with Nima was a great experience. He understands requirements well and turns ideas into practical interfaces."
+    },
+
+    "frontendDeveloper": {
+      "name": "Daniel Smith",
+      "role": "Front-End Developer",
+      "text": "Nima has a strong interest in front-end development and is always willing to learn new technologies and improve his code."
+    },
+
+    "backendDeveloper": {
+      "name": "Michael Brown",
+      "role": "Back-End Developer",
+      "text": "Communication and collaboration with Nima were smooth. He pays attention to details and understands how the front-end connects with the backend."
+    },
+
+    "uiuxDesigner": {
+      "name": "Emma Davis",
+      "role": "UI/UX Designer",
+      "text": "Nima does a great job turning designs into responsive and interactive user interfaces while keeping the user experience in mind."
+    }
+  },
+
+  "contact": {
+    "subtitle": "Get In Touch",
+    "title": "Let's Work Together",
+    "description": "Have a project in mind or want to talk about an opportunity? Feel free to get in touch with me.",
+
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Your message has been sent successfully!",
+      "error": "Something went wrong. Please try again."
+    },
+
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "locationValue": "Tabriz, Iran"
+    }
+  },
+
+  "footer": {
+    "description": "Front-End Developer passionate about creating modern and user-friendly web experiences.",
+    "quickLinks": "Quick Links",
+    "socialLinks": "Social Links",
+    "copyright": "All rights reserved."
+  },
+
+  "common": {
+    "previous": "Previous",
+    "next": "Next",
+    "close": "Close",
+    "loading": "Loading...",
+    "language": "Language"
+  }
+}

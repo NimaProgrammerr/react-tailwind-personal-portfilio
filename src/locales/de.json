@@ -1,0 +1,174 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "testimonials": "Referenzen",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "Front-End-Entwickler",
+    "greeting": "Hallo, ich bin",
+    "name": "Nima",
+    "role": "Front-End-Entwickler",
+    "description": "Ich entwickle moderne, responsive und benutzerfreundliche Webanwendungen mit React, Next.js und modernen Webtechnologien.",
+    "contactButton": "Kontakt aufnehmen",
+    "resumeButton": "Lebenslauf herunterladen",
+    "scrollDown": "Nach unten scrollen"
+  },
+  "about": {
+    "subtitle": "Über mich",
+    "title": "Ideen in digitale Erlebnisse verwandeln",
+    "heading": "Ein Front-End-Entwickler mit Leidenschaft für moderne Webanwendungen",
+    "description1": "Ich bin Student der Computertechnik und Front-End-Entwickler. Mein Schwerpunkt liegt auf der Entwicklung moderner, responsiver und benutzerfreundlicher Webanwendungen.",
+    "description2": "Zu meinen wichtigsten Technologien gehören JavaScript, TypeScript, React, Next.js, Tailwind CSS und moderne Front-End-Entwicklungstools. Ich liebe es, Ideen und Designs in saubere und interaktive Benutzeroberflächen zu verwandeln.",
+    "description3": "Durch akademische, persönliche und reale Projekte lerne ich kontinuierlich dazu und verbessere meine Fähigkeiten. Ich beschäftige mich gerne mit Problemlösung, neuen Technologien und der Entwicklung funktionaler und visuell ansprechender Web-Erlebnisse.",
+    "features": {
+      "cleanCode": {
+        "title": "Sauberer Code",
+        "description": "Sauberen, wartbaren und wiederverwendbaren Code nach modernen Entwicklungsstandards schreiben."
+      },
+      "problemSolving": {
+        "title": "Problemlösung",
+        "description": "Komplexe Probleme in einfache und praktische Lösungen aufteilen."
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Schnelle, responsive und optimierte Webanwendungen entwickeln."
+      },
+      "collaboration": {
+        "title": "Zusammenarbeit",
+        "description": "Effektiv mit Entwicklern, Designern und anderen Teammitgliedern zusammenarbeiten."
+      }
+    }
+  },
+  "skills": {
+    "subtitle": "Meine Fähigkeiten",
+    "title": "Technologien, mit denen ich arbeite",
+    "description": "Hier sind einige der Technologien und Tools, die ich für die Entwicklung moderner und skalierbarer Webanwendungen verwende."
+  },
+  "experience": {
+    "subtitle": "Mein Weg",
+    "title": "Erfahrung & Ausbildung",
+    "frontendIntern": {
+      "title": "Front-End-Praktikant",
+      "company": "Praktikum",
+      "period": "2024 - 2025",
+      "description": "Ich habe an Front-End-Entwicklungsaufgaben gearbeitet und praktische Erfahrung beim Erstellen responsiver und interaktiver Weboberflächen gesammelt."
+    },
+    "juniorDeveloper": {
+      "title": "Junior-Programmierer",
+      "company": "Softwareentwicklung",
+      "period": "2025 - 2026",
+      "description": "Ich habe an persönlichen und praktischen Projekten gearbeitet und gleichzeitig meine Fähigkeiten in moderner Webentwicklung, Problemlösung und Softwareentwicklung verbessert."
+    },
+    "university": {
+      "title": "Computertechnik",
+      "company": "Universität Täbris",
+      "period": "2024 - Heute",
+      "description": "Ich studiere Computertechnik und entwickle eine solide Grundlage in Programmierung, Algorithmen, Softwareentwicklung und Informatik."
+    },
+    "programmingCourse": {
+      "title": "Programmierkurs",
+      "company": "Technischer Komplex Täbris",
+      "period": "2024",
+      "description": "Ich habe einen Programmierkurs abgeschlossen, der sich auf die Verbesserung praktischer Programmier- und Softwareentwicklungsfähigkeiten konzentrierte."
+    },
+    "mathPhysics": {
+      "title": "Mathematik & Physik",
+      "company": "Gymnasium",
+      "period": "2021 - 2024",
+      "description": "Ich habe Mathematik und Physik mit Schwerpunkt auf analytischem Denken, Problemlösung und Vorbereitung auf das Universitätsstudium gelernt."
+    }
+  },
+  "projects": {
+    "subtitle": "Meine Arbeiten",
+    "title": "Ausgewählte Projekte",
+    "description": "Hier sind einige Projekte, an denen ich mit modernen Technologien gearbeitet habe.",
+    "viewProject": "Projekt ansehen",
+    "viewCode": "Code ansehen",
+    "liveDemo": "Live-Demo",
+    "foodOrder": {
+      "title": "Webanwendung für Essensbestellungen",
+      "description": "Eine moderne Webanwendung zur Essensbestellung mit responsiver Benutzeroberfläche und interaktivem Bestellerlebnis."
+    },
+    "ecommerce": {
+      "title": "E-Commerce-Plattform",
+      "description": "Eine moderne E-Commerce-Plattform mit Produktverwaltung, Warenkorb, Zahlungsintegration und responsivem Design."
+    },
+    "aiWriting": {
+      "title": "KI-Schreibassistent",
+      "description": "Ein KI-gestützter Schreibassistent, der Benutzern beim Erstellen, Verbessern und Verwalten von Textinhalten hilft."
+    },
+    "projectManagement": {
+      "title": "Projektmanagement-Tool",
+      "description": "Eine Projektmanagement-Anwendung, die Teams dabei unterstützt, Aufgaben zu organisieren, zusammenzuarbeiten und Projekte effizient zu verwalten."
+    }
+  },
+  "testimonials": {
+    "subtitle": "Referenzen",
+    "title": "Was andere sagen",
+    "description": "Feedback von Menschen, mit denen ich zusammenarbeiten durfte.",
+    "cto": {
+      "name": "Alex Johnson",
+      "role": "CTO",
+      "text": "Nima ist ein motivierter Entwickler, der kontinuierlich daran arbeitet, seine technischen Fähigkeiten zu verbessern und saubere Lösungen zu liefern."
+    },
+    "productManager": {
+      "name": "Sarah Williams",
+      "role": "Produktmanagerin",
+      "text": "Die Zusammenarbeit mit Nima war eine großartige Erfahrung. Er versteht Anforderungen gut und verwandelt Ideen in praktische Benutzeroberflächen."
+    },
+    "frontendDeveloper": {
+      "name": "Daniel Smith",
+      "role": "Front-End-Entwickler",
+      "text": "Nima interessiert sich sehr für Front-End-Entwicklung und ist immer bereit, neue Technologien zu lernen und seinen Code zu verbessern."
+    },
+    "backendDeveloper": {
+      "name": "Michael Brown",
+      "role": "Back-End-Entwickler",
+      "text": "Die Kommunikation und Zusammenarbeit mit Nima waren sehr angenehm. Er achtet auf Details und versteht die Verbindung zwischen Front-End und Back-End."
+    },
+    "uiuxDesigner": {
+      "name": "Emma Davis",
+      "role": "UI/UX-Designerin",
+      "text": "Nima ist sehr gut darin, Designs in responsive und interaktive Benutzeroberflächen umzusetzen und dabei die Benutzererfahrung im Blick zu behalten."
+    }
+  },
+  "contact": {
+    "subtitle": "Kontakt aufnehmen",
+    "title": "Lass uns zusammenarbeiten",
+    "description": "Hast du ein Projekt im Kopf oder möchtest du über eine berufliche Möglichkeit sprechen? Kontaktiere mich gerne.",
+    "form": {
+      "name": "Dein Name",
+      "email": "Deine E-Mail",
+      "subject": "Betreff",
+      "message": "Deine Nachricht",
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "success": "Deine Nachricht wurde erfolgreich gesendet!",
+      "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
+    },
+    "info": {
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "location": "Standort",
+      "locationValue": "Täbris, Iran"
+    }
+  },
+  "footer": {
+    "description": "Front-End-Entwickler mit Leidenschaft für moderne und benutzerfreundliche Web-Erlebnisse.",
+    "quickLinks": "Schnellzugriff",
+    "socialLinks": "Soziale Netzwerke",
+    "copyright": "Alle Rechte vorbehalten."
+  },
+  "common": {
+    "previous": "Zurück",
+    "next": "Weiter",
+    "close": "Schließen",
+    "loading": "Wird geladen...",
+    "language": "Sprache"
+  }
+}

@@ -1,12 +1,159 @@
+// // import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+// // import { useState } from "react";
+
+// // // import image1 from "../../public/profile-image/profile-image-1.jpg";
+// // // import image2 from "../../public/profile-image/profile-image-2.jpg";
+// // // import image3 from "../../public/profile-image/profile-image-3.jpg";
+// // // import image4 from "../../public/profile-image/profile-image-4.jpg";
+// // // import image5 from "../../public/profile-image/profile-image-5.jpg";
+
+
+// // const testimonials = [
+// //   {
+// //     quote:
+// //       "Nima is a highly motivated developer with a strong passion for learning and improving his technical skills. What stands out most is his ability to understand new technologies quickly and apply them in real projects. He is responsible, curious, and always willing to take on new challenges. I believe he has great potential to grow into a strong software engineer.",
+// //     author: "Ali Valipour",
+// //     role: "CTO, Tech Innovators Inc.",
+// //     avator: "../../public/profile-image/profile-image-1.jpg",
+// //   },
+// //   {
+// //     quote:
+// //       "Working with Nima has been a great experience. He understands that building a good product is not only about writing code, but also about understanding user needs and business goals. He communicates well, takes feedback seriously, and consistently looks for ways to improve the final product. His mindset and willingness to learn make him a valuable member of any team.",
+// //     author: "Armin Mohammadi",
+// //     role: "Product Manager",
+// //     avator: "../../public/profile-image/profile-image-2.jpg",
+// //   },
+// //   {
+// //     quote:
+// //       "Nima has a strong interest in modern front-end development and pays close attention to both functionality and user experience. His work with React, TypeScript, and Tailwind CSS shows his commitment to building clean and responsive interfaces. He is also comfortable learning from others, solving problems, and continuously improving the quality of his code.",
+// //     author: "Ata Alizade",
+// //     role: "Front-End Developer",
+// //     avator: "../../public/profile-image/profile-image-3.jpg",
+// //   },
+// //   {
+// //     quote:
+// //       "Nima is a developer who understands the importance of good communication between the front-end and back-end. He is interested in how APIs, databases, and application architecture work together to create reliable software. He asks the right questions, learns quickly, and is always looking for a better technical solution. I really appreciate his collaborative approach to development.",
+// //     author: "Mohammad hassani",
+// //     role: "Back-End developer",
+// //     avator: "../../public/profile-image/profile-image-4.jpg",
+// //   },
+// //   {
+// //     quote:
+// //       "Nima has a good understanding of the relationship between design and development. He pays attention to details and makes an effort to translate UI/UX designs into clean, responsive, and user-friendly interfaces. He is open to feedback and understands that small visual details can make a big difference in the overall user experience.",
+// //     author: "Hassan Mohammadi",
+// //     role: "Ui/Ux desiner",
+// //     avator: "../../public/profile-image/profile-image-5.jpg",
+// //   },
+// // ];
+
+// // const Testimonials = () => {
+// //   const [activeIdx, setActiveIdx] = useState(0);
+
+// //   const next =() => {
+// //     setActiveIdx((prev) => (prev + 1) % testimonials.length);
+// //   }
+
+// //   const previous = () => {
+// //     setActiveIdx((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+// //   }
+// //   return (
+// //     <section id="testimonials" className="py-32 relative overflow-hidden">
+// //       <div
+// //         className="absolute top-1/2 left-1/2
+// //             w-[800px] h-[800px] bg-primary/5
+// //             rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
+// //       />
+// //       <div
+// //         className="container mx-auto 
+// //              px-6 relative z-10"
+// //       >
+// //         {/* Section Header */}
+// //         <div
+// //           className="text-center max-w-3xl
+// //         mx-auto mb-16"
+// //         >
+// //           <span
+// //             className="text-secondary-foreground
+// //             text-sm font-medium tracking-wider
+// //             uppercase animate-fade-in"
+// //           >
+// //             What People Say
+// //           </span>
+// //           <h2
+// //             className="text-4xl md:text-5xl
+// //           font-bold mt-4 mb-6 animate-fade-in 
+// //           animation-delay-100 text-secondary-foreground"
+// //           >
+// //             Kind Words from{" "}
+// //             <span className="font-serif italic 
+// //             font-normal text-white">
+// //               Amazing people.
+// //             </span>
+// //           </h2>
+// //         </div>
+
+// //         {/* Testimonial Carousel */}
+// //         <div className="max-w-4xl mx-auto">
+// //           <div className="relative">
+// //             {/* Main Testimonial */}
+// //             <div className="glass p-8 rounded-3xl md:p-12 glow-border animate-fade-in animation-delay-200">
+// //               <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-primary flex items-center justify-center">
+// //                 <Quote className="w-6 h-6 text-primary-foreground" />
+// //               </div>
+
+// //               <blockquote className="text-xl md:text-2xl font-medium  leading-relaxed mb-8 pt-4">
+// //                 "{testimonials[activeIdx].quote}"
+// //               </blockquote>
+
+// //               <div className="flex items-center gap-4">
+// //                 <img src={testimonials[activeIdx].avator}
+// //                   alt={testimonials[activeIdx].author}
+// //                   className="w-14 h-14 rounded-full object-conver ring-2 ring-primary/20"
+// //                 />
+// //                 <div>
+// //                   <div className="font-semibold">{testimonials[activeIdx].author}</div>
+// //                   <div className="text-sm text-muted-foreground">
+// //                     {testimonials[activeIdx].role}
+// //                   </div>
+// //                 </div>
+// //               </div>
+// //             </div>
+
+// //             {/* Testimonials Navigation */}
+// //             <div className="flex items-center justify-center gap-4 mt-8">
+// //               <button className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all" onClick={previous}>
+// //                 <ChevronLeft />
+// //               </button>
+
+// //               <div className="flex gap-2">
+// //                 {testimonials.map((_, idx) => (
+// //                 <button 
+// //                 onClick={() => setActiveIdx(idx)}
+// //                 className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === activeIdx
+// //                     ? "w-8 bg-primary"
+// //                     : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+// //                   }`}
+// //                 />
+// //               ))}
+// //               </div>
+
+// //               <button onClick={next} className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all">
+// //                 <ChevronRight />
+// //               </button>
+// //             </div>
+// //           </div>
+// //         </div>
+// //       </div>
+// //     </section>
+// //   );
+// // };
+
+// // export default Testimonials;
+
+
+
 // import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 // import { useState } from "react";
-
-// // import image1 from "../../public/profile-image/profile-image-1.jpg";
-// // import image2 from "../../public/profile-image/profile-image-2.jpg";
-// // import image3 from "../../public/profile-image/profile-image-3.jpg";
-// // import image4 from "../../public/profile-image/profile-image-4.jpg";
-// // import image5 from "../../public/profile-image/profile-image-5.jpg";
-
 
 // const testimonials = [
 //   {
@@ -14,64 +161,62 @@
 //       "Nima is a highly motivated developer with a strong passion for learning and improving his technical skills. What stands out most is his ability to understand new technologies quickly and apply them in real projects. He is responsible, curious, and always willing to take on new challenges. I believe he has great potential to grow into a strong software engineer.",
 //     author: "Ali Valipour",
 //     role: "CTO, Tech Innovators Inc.",
-//     avator: "../../public/profile-image/profile-image-1.jpg",
+//     avatar: `${import.meta.env.BASE_URL}profile-image/profile-image-1.jpg`,
 //   },
 //   {
 //     quote:
 //       "Working with Nima has been a great experience. He understands that building a good product is not only about writing code, but also about understanding user needs and business goals. He communicates well, takes feedback seriously, and consistently looks for ways to improve the final product. His mindset and willingness to learn make him a valuable member of any team.",
 //     author: "Armin Mohammadi",
 //     role: "Product Manager",
-//     avator: "../../public/profile-image/profile-image-2.jpg",
+//     avatar: `${import.meta.env.BASE_URL}profile-image/profile-image-2.jpg`,
 //   },
 //   {
 //     quote:
 //       "Nima has a strong interest in modern front-end development and pays close attention to both functionality and user experience. His work with React, TypeScript, and Tailwind CSS shows his commitment to building clean and responsive interfaces. He is also comfortable learning from others, solving problems, and continuously improving the quality of his code.",
 //     author: "Ata Alizade",
 //     role: "Front-End Developer",
-//     avator: "../../public/profile-image/profile-image-3.jpg",
+//     avatar: `${import.meta.env.BASE_URL}profile-image/profile-image-3.jpg`,
 //   },
 //   {
 //     quote:
 //       "Nima is a developer who understands the importance of good communication between the front-end and back-end. He is interested in how APIs, databases, and application architecture work together to create reliable software. He asks the right questions, learns quickly, and is always looking for a better technical solution. I really appreciate his collaborative approach to development.",
-//     author: "Mohammad hassani",
-//     role: "Back-End developer",
-//     avator: "../../public/profile-image/profile-image-4.jpg",
+//     author: "Mohammad Hassani",
+//     role: "Back-End Developer",
+//     avatar: `${import.meta.env.BASE_URL}profile-image/profile-image-4.jpg`,
 //   },
 //   {
 //     quote:
 //       "Nima has a good understanding of the relationship between design and development. He pays attention to details and makes an effort to translate UI/UX designs into clean, responsive, and user-friendly interfaces. He is open to feedback and understands that small visual details can make a big difference in the overall user experience.",
 //     author: "Hassan Mohammadi",
-//     role: "Ui/Ux desiner",
-//     avator: "../../public/profile-image/profile-image-5.jpg",
+//     role: "UI/UX Designer",
+//     avatar: `${import.meta.env.BASE_URL}profile-image/profile-image-5.jpg`,
 //   },
 // ];
 
 // const Testimonials = () => {
 //   const [activeIdx, setActiveIdx] = useState(0);
 
-//   const next =() => {
+//   const next = () => {
 //     setActiveIdx((prev) => (prev + 1) % testimonials.length);
-//   }
+//   };
 
 //   const previous = () => {
-//     setActiveIdx((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-//   }
+//     setActiveIdx(
+//       (prev) => (prev - 1 + testimonials.length) % testimonials.length
+//     );
+//   };
+
 //   return (
 //     <section id="testimonials" className="py-32 relative overflow-hidden">
 //       <div
 //         className="absolute top-1/2 left-1/2
-//             w-[800px] h-[800px] bg-primary/5
-//             rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
+//         w-[800px] h-[800px] bg-primary/5
+//         rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
 //       />
-//       <div
-//         className="container mx-auto 
-//              px-6 relative z-10"
-//       >
+
+//       <div className="container mx-auto px-6 relative z-10">
 //         {/* Section Header */}
-//         <div
-//           className="text-center max-w-3xl
-//         mx-auto mb-16"
-//         >
+//         <div className="text-center max-w-3xl mx-auto mb-16">
 //           <span
 //             className="text-secondary-foreground
 //             text-sm font-medium tracking-wider
@@ -79,14 +224,14 @@
 //           >
 //             What People Say
 //           </span>
+
 //           <h2
 //             className="text-4xl md:text-5xl
-//           font-bold mt-4 mb-6 animate-fade-in 
-//           animation-delay-100 text-secondary-foreground"
+//             font-bold mt-4 mb-6 animate-fade-in
+//             animation-delay-100 text-secondary-foreground"
 //           >
 //             Kind Words from{" "}
-//             <span className="font-serif italic 
-//             font-normal text-white">
+//             <span className="font-serif italic font-normal text-white">
 //               Amazing people.
 //             </span>
 //           </h2>
@@ -96,22 +241,36 @@
 //         <div className="max-w-4xl mx-auto">
 //           <div className="relative">
 //             {/* Main Testimonial */}
-//             <div className="glass p-8 rounded-3xl md:p-12 glow-border animate-fade-in animation-delay-200">
-//               <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-primary flex items-center justify-center">
+//             <div
+//               className="glass p-8 rounded-3xl md:p-12
+//               glow-border animate-fade-in animation-delay-200"
+//             >
+//               <div
+//                 className="absolute -top-4 left-8 w-12 h-12
+//                 rounded-full bg-primary flex items-center justify-center"
+//               >
 //                 <Quote className="w-6 h-6 text-primary-foreground" />
 //               </div>
 
-//               <blockquote className="text-xl md:text-2xl font-medium  leading-relaxed mb-8 pt-4">
+//               <blockquote
+//                 className="text-xl md:text-2xl font-medium
+//                 leading-relaxed mb-8 pt-4"
+//               >
 //                 "{testimonials[activeIdx].quote}"
 //               </blockquote>
 
 //               <div className="flex items-center gap-4">
-//                 <img src={testimonials[activeIdx].avator}
+//                 <img
+//                   src={testimonials[activeIdx].avatar}
 //                   alt={testimonials[activeIdx].author}
-//                   className="w-14 h-14 rounded-full object-conver ring-2 ring-primary/20"
+//                   className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20"
 //                 />
+
 //                 <div>
-//                   <div className="font-semibold">{testimonials[activeIdx].author}</div>
+//                   <div className="font-semibold">
+//                     {testimonials[activeIdx].author}
+//                   </div>
+
 //                   <div className="text-sm text-muted-foreground">
 //                     {testimonials[activeIdx].role}
 //                   </div>
@@ -121,23 +280,43 @@
 
 //             {/* Testimonials Navigation */}
 //             <div className="flex items-center justify-center gap-4 mt-8">
-//               <button className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all" onClick={previous}>
+//               <button
+//                 type="button"
+//                 className="p-3 rounded-full glass
+//                 hover:bg-primary/10 hover:text-primary
+//                 transition-all"
+//                 onClick={previous}
+//                 aria-label="Previous testimonial"
+//               >
 //                 <ChevronLeft />
 //               </button>
 
 //               <div className="flex gap-2">
 //                 {testimonials.map((_, idx) => (
-//                 <button 
-//                 onClick={() => setActiveIdx(idx)}
-//                 className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === activeIdx
-//                     ? "w-8 bg-primary"
-//                     : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
-//                   }`}
-//                 />
-//               ))}
+//                   <button
+//                     key={idx}
+//                     type="button"
+//                     onClick={() => setActiveIdx(idx)}
+//                     aria-label={`Go to testimonial ${idx + 1}`}
+//                     className={`w-2 h-2 rounded-full
+//                       transition-all duration-300
+//                       ${
+//                         idx === activeIdx
+//                           ? "w-8 bg-primary"
+//                           : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+//                       }`}
+//                   />
+//                 ))}
 //               </div>
 
-//               <button onClick={next} className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all">
+//               <button
+//                 type="button"
+//                 onClick={next}
+//                 className="p-3 rounded-full glass
+//                 hover:bg-primary/10 hover:text-primary
+//                 transition-all"
+//                 aria-label="Next testimonial"
+//               >
 //                 <ChevronRight />
 //               </button>
 //             </div>
@@ -152,175 +331,256 @@
 
 
 
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
-import { useState } from "react";
+// import { Quote } from "lucide-react";
+// import { useLanguage } from "../context/LanguageContext";
+
+// const testimonials = [
+//   {
+//     id: "cto",
+//     initials: "AJ",
+//   },
+//   {
+//     id: "productManager",
+//     initials: "SW",
+//   },
+//   {
+//     id: "frontendDeveloper",
+//     initials: "DS",
+//   },
+//   {
+//     id: "backendDeveloper",
+//     initials: "MB",
+//   },
+//   {
+//     id: "uiuxDesigner",
+//     initials: "ED",
+//   },
+// ];
+
+// const Testimonials = () => {
+//   const { t } = useLanguage();
+
+//   return (
+//     <section
+//       id="testimonials"
+//       className="relative py-24 bg-background overflow-hidden"
+//     >
+//       {/* Background Decorations */}
+//       <div className="absolute inset-0 pointer-events-none">
+//         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
+//         <div className="absolute bottom-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
+//       </div>
+
+//       <div className="container mx-auto px-6 relative z-10">
+//         {/* Section Header */}
+//         <div className="text-center max-w-3xl mx-auto mb-16">
+//           <p className="text-primary font-medium mb-3">
+//             {t("testimonials.subtitle")}
+//           </p>
+
+//           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5">
+//             {t("testimonials.title")}
+//           </h2>
+
+//           <p className="text-muted-foreground leading-7">
+//             {t("testimonials.description")}
+//           </p>
+
+//           <div className="w-20 h-1 bg-primary mx-auto mt-6 rounded-full" />
+//         </div>
+
+//         {/* Testimonials */}
+//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+//           {testimonials.map((testimonial) => (
+//             <div
+//               key={testimonial.id}
+//               className="
+//                 group
+//                 relative
+//                 bg-card
+//                 border
+//                 border-border
+//                 rounded-2xl
+//                 p-6
+//                 transition-all
+//                 duration-300
+//                 hover:-translate-y-2
+//                 hover:border-primary/50
+//                 hover:shadow-xl
+//                 hover:shadow-primary/5
+//               "
+//             >
+//               {/* Quote Icon */}
+//               <div className="absolute top-5 right-5 text-primary/20 group-hover:text-primary/40 transition-colors">
+//                 <Quote size={42} />
+//               </div>
+
+//               {/* Text */}
+//               <div className="relative z-10">
+//                 <p className="text-muted-foreground leading-7 mb-6">
+//                   "{t(`testimonials.${testimonial.id}.text`)}"
+//                 </p>
+
+//                 {/* Person */}
+//                 <div className="flex items-center gap-4">
+//                   {/* Avatar */}
+//                   <div
+//                     className="
+//                       w-12
+//                       h-12
+//                       rounded-full
+//                       bg-primary/10
+//                       border
+//                       border-primary/20
+//                       flex
+//                       items-center
+//                       justify-center
+//                       shrink-0
+//                     "
+//                   >
+//                     <span className="text-primary font-semibold">
+//                       {testimonial.initials}
+//                     </span>
+//                   </div>
+
+//                   {/* Information */}
+//                   <div>
+//                     <h3 className="text-foreground font-semibold">
+//                       {t(`testimonials.${testimonial.id}.name`)}
+//                     </h3>
+
+//                     <p className="text-sm text-primary">
+//                       {t(`testimonials.${testimonial.id}.role`)}
+//                     </p>
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Testimonials;
+
+
+
+import { useLanguage } from "../context/LanguageContext";
+
+
+import image1 from "../../public/profile-image/profile-image-1.jpg";
+import image2 from "../../public/profile-image/profile-image-2.jpg";
+import image3 from "../../public/profile-image/profile-image-3.jpg";
+import image4 from "../../public/profile-image/profile-image-4.jpg";
+import image5 from "../../public/profile-image/profile-image-5.jpg";
+
 
 const testimonials = [
   {
-    quote:
-      "Nima is a highly motivated developer with a strong passion for learning and improving his technical skills. What stands out most is his ability to understand new technologies quickly and apply them in real projects. He is responsible, curious, and always willing to take on new challenges. I believe he has great potential to grow into a strong software engineer.",
-    author: "Ali Valipour",
-    role: "CTO, Tech Innovators Inc.",
-    avatar: `${import.meta.env.BASE_URL}profile-image/profile-image-1.jpg`,
+    id: 1,
+    name: "Ali Ahmadi",
+    roleKey: "aliRole",
+    quoteKey: "aliQuote",
+    image: image1,
   },
   {
-    quote:
-      "Working with Nima has been a great experience. He understands that building a good product is not only about writing code, but also about understanding user needs and business goals. He communicates well, takes feedback seriously, and consistently looks for ways to improve the final product. His mindset and willingness to learn make him a valuable member of any team.",
-    author: "Armin Mohammadi",
-    role: "Product Manager",
-    avatar: `${import.meta.env.BASE_URL}profile-image/profile-image-2.jpg`,
+    id: 2,
+    name: "Pouya Amini",
+    roleKey: "saraRole",
+    quoteKey: "saraQuote",
+    image: image2,
   },
   {
-    quote:
-      "Nima has a strong interest in modern front-end development and pays close attention to both functionality and user experience. His work with React, TypeScript, and Tailwind CSS shows his commitment to building clean and responsive interfaces. He is also comfortable learning from others, solving problems, and continuously improving the quality of his code.",
-    author: "Ata Alizade",
-    role: "Front-End Developer",
-    avatar: `${import.meta.env.BASE_URL}profile-image/profile-image-3.jpg`,
+    id: 3,
+    name: "Hassan Valipour",
+    roleKey: "johnRole",
+    quoteKey: "johnQuote",
+    image: image3,
   },
   {
-    quote:
-      "Nima is a developer who understands the importance of good communication between the front-end and back-end. He is interested in how APIs, databases, and application architecture work together to create reliable software. He asks the right questions, learns quickly, and is always looking for a better technical solution. I really appreciate his collaborative approach to development.",
-    author: "Mohammad Hassani",
-    role: "Back-End Developer",
-    avatar: `${import.meta.env.BASE_URL}profile-image/profile-image-4.jpg`,
+    id: 4,
+    name: "Omid Hajipour",
+    roleKey: "mariaRole",
+    quoteKey: "mariaQuote",
+    image: image4,
   },
   {
-    quote:
-      "Nima has a good understanding of the relationship between design and development. He pays attention to details and makes an effort to translate UI/UX designs into clean, responsive, and user-friendly interfaces. He is open to feedback and understands that small visual details can make a big difference in the overall user experience.",
-    author: "Hassan Mohammadi",
-    role: "UI/UX Designer",
-    avatar: `${import.meta.env.BASE_URL}profile-image/profile-image-5.jpg`,
+    id: 5,
+    name: "Armin Arjmand",
+    roleKey: "mariaRole",
+    quoteKey: "mariaQuote",
+    image: image5,
   },
+  
 ];
 
 const Testimonials = () => {
-  const [activeIdx, setActiveIdx] = useState(0);
-
-  const next = () => {
-    setActiveIdx((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const previous = () => {
-    setActiveIdx(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length
-    );
-  };
+  const { t } = useLanguage();
 
   return (
-    <section id="testimonials" className="py-32 relative overflow-hidden">
-      <div
-        className="absolute top-1/2 left-1/2
-        w-[800px] h-[800px] bg-primary/5
-        rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
-      />
+    <section
+      id="testimonials"
+      className="py-20 bg-background text-foreground"
+    >
+      <div className="container mx-auto px-6">
 
-      <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span
-            className="text-secondary-foreground
-            text-sm font-medium tracking-wider
-            uppercase animate-fade-in"
-          >
-            What People Say
-          </span>
+        <div className="text-center mb-14">
+          <p className="text-primary font-medium mb-2">
+            {t("testimonials.badge")}
+          </p>
 
-          <h2
-            className="text-4xl md:text-5xl
-            font-bold mt-4 mb-6 animate-fade-in
-            animation-delay-100 text-secondary-foreground"
-          >
-            Kind Words from{" "}
-            <span className="font-serif italic font-normal text-white">
-              Amazing people.
-            </span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            {t("testimonials.title")}
           </h2>
+
+          <p className="text-foreground/60 max-w-2xl mx-auto">
+            {t("testimonials.description")}
+          </p>
         </div>
 
-        {/* Testimonial Carousel */}
-        <div className="max-w-4xl mx-auto">
-          <div className="relative">
-            {/* Main Testimonial */}
+        {/* Testimonials */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {testimonials.map((testimonial) => (
             <div
-              className="glass p-8 rounded-3xl md:p-12
-              glow-border animate-fade-in animation-delay-200"
+              key={testimonial.id}
+              className="bg-card border border-border rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:border-primary/50"
             >
-              <div
-                className="absolute -top-4 left-8 w-12 h-12
-                rounded-full bg-primary flex items-center justify-center"
-              >
-                <Quote className="w-6 h-6 text-primary-foreground" />
-              </div>
+              {/* User */}
+              <div className="flex items-center gap-4 mb-5">
 
-              <blockquote
-                className="text-xl md:text-2xl font-medium
-                leading-relaxed mb-8 pt-4"
-              >
-                "{testimonials[activeIdx].quote}"
-              </blockquote>
+                {/* Image */}
+                <div className="w-14 h-14 rounded-full overflow-hidden shrink-0 border-2 border-primary/30">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.src = "/profile-photo.png";
+                    }}
+                  />
+                </div>
 
-              <div className="flex items-center gap-4">
-                <img
-                  src={testimonials[activeIdx].avatar}
-                  alt={testimonials[activeIdx].author}
-                  className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20"
-                />
-
+                {/* Name & Role */}
                 <div>
-                  <div className="font-semibold">
-                    {testimonials[activeIdx].author}
-                  </div>
+                  <h3 className="font-semibold text-foreground">
+                    {testimonial.name}
+                  </h3>
 
-                  <div className="text-sm text-muted-foreground">
-                    {testimonials[activeIdx].role}
-                  </div>
+                  <p className="text-sm text-foreground/50">
+                    {t(`testimonials.${testimonial.roleKey}`)}
+                  </p>
                 </div>
               </div>
+
+              {/* Quote */}
+              <p className="text-foreground/70 leading-7">
+                "{t(`testimonials.${testimonial.quoteKey}`)}"
+              </p>
             </div>
-
-            {/* Testimonials Navigation */}
-            <div className="flex items-center justify-center gap-4 mt-8">
-              <button
-                type="button"
-                className="p-3 rounded-full glass
-                hover:bg-primary/10 hover:text-primary
-                transition-all"
-                onClick={previous}
-                aria-label="Previous testimonial"
-              >
-                <ChevronLeft />
-              </button>
-
-              <div className="flex gap-2">
-                {testimonials.map((_, idx) => (
-                  <button
-                    key={idx}
-                    type="button"
-                    onClick={() => setActiveIdx(idx)}
-                    aria-label={`Go to testimonial ${idx + 1}`}
-                    className={`w-2 h-2 rounded-full
-                      transition-all duration-300
-                      ${
-                        idx === activeIdx
-                          ? "w-8 bg-primary"
-                          : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                      }`}
-                  />
-                ))}
-              </div>
-
-              <button
-                type="button"
-                onClick={next}
-                className="p-3 rounded-full glass
-                hover:bg-primary/10 hover:text-primary
-                transition-all"
-                aria-label="Next testimonial"
-              >
-                <ChevronRight />
-              </button>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

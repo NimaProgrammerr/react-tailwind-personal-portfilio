@@ -1,201 +1,688 @@
-import Button from "../components/Button";
-import { ArrowRight, ChevronDown, Download } from "lucide-react";
-import AnimatedBorderButton from "../components/AnimatedBorderButton";
+// import Button from "../components/Button";
+// import { ArrowRight, ChevronDown, Download } from "lucide-react";
+// import AnimatedBorderButton from "../components/AnimatedBorderButton";
+// import photo from "../../public/projects/image.png";
+
+
+// const skills = [
+//   "React",
+//   "Next.js",
+//   "TypeScript",
+//   "javaScript",
+//   "Node.js",
+//   "GraphQL",
+//   "PostgresSQL",
+//   "MongoDB",
+//   "SQL Server",
+//   "Asp.Net Core",
+//   "Redis",
+//   "Docker",
+//   "Aws",
+//   "Vercel",
+//   "Tailwind CSS",
+//   "BootStrap",
+//   "Jest",
+//   "Git",
+//   "Github Actions",
+// ];
+// const Hero = () => {
+//   return (
+//     <section className="relative min-h-screen flex items-center overflow-hidden">
+//       {/* Bg */}
+//       <div className="absolute inset-0">
+//         <img
+//           src="./hero-bg.avif"
+//           alt="hero image"
+//           className="w-full h-full object-cover opacity-40"
+//         />
+//         <div className="absolute inset-0  bg-gradient-to-b from-background/20 via-background/80 to-background"></div>
+//       </div>
+//       <div>
+//         {[...Array(30)].map((_, i) => (
+//           <div
+//             key={i}
+//             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
+//             style={{
+//               backgroundColor: "#20B2A6",
+//               left: `${Math.random() * 100}%`,
+//               top: `${Math.random() * 100}%`,
+//               animation: `slow-drift ${15 + Math.random() * 20}s 
+//                         ease-in-out infinite`,
+//               animationDelay: `${Math.random() * 5}s`,
+//             }}
+//           ></div>
+//         ))}
+//       </div>
+
+//       {/* Content */}
+
+//       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+//         <div className="grid lg:grid-cols-2 gap-12 items-center">
+//           {/* Left Column - Text Content */}
+//           <div className="space-y-8">
+//             <div className="animate-fade-in">
+//               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
+//                 <span className="w-2 h-2 bg-primary rounded-full animate-pluse" />
+//                 Front-End Developer . React Specialist
+//               </span>
+//             </div>
+
+//             {/* Headline */}
+//             <div>
+//               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+//                 Crafting <span className="text-primary glow-text">digital</span>
+//                 <br />
+//                 experiences with
+//                 <br />
+//                 <span className="font-serif italic font-normal text-white">
+//                   precision.
+//                 </span>
+//               </h1>
+//               <p className="text-lg  text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
+//                 Hi, Im Nima Farzizad - a front-end developer specializing in
+//                 React, Next.js, and TypeScript. I build scalable, performat web
+//                 applications that users love.
+//               </p>
+//             </div>
+
+//             {/* CTAs */}
+//             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+//               <Button size="lg">
+//                 <a href="#contact">Contact me </a> <ArrowRight className="w-5 h-5" />
+//               </Button>
+//               <a
+//                 href={`${import.meta.env.BASE_URL}resume.pdf`}
+//                 download="Nima-Resume.pdf"
+//                 className="inline-block"
+//               >
+//                 <AnimatedBorderButton>
+//                   <Download className="w-5 h-5" />
+//                   Download CV
+//                 </AnimatedBorderButton>
+//               </a>
+//             </div>
+
+
+//             {/* Social Links */}
+//             {/* <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+//               <span className="text-sm text-muted-foreground">Follow me: </span> */}
+//             {/* {[
+//                 { icon: "Github", href: "#" },
+//                 { icon: "Linkedin", href: "#" },
+//                 { icon: "Twitter", href: "#" },
+//               ].map((social, idx) => (
+//                 <a
+//                   key={idx}
+//                   href={social.href}
+//                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+//                 >
+//                   {<social.icon className="w-5 h-5" />}
+//                 </a>
+//               ))} */}
+//             {/* </div> */}
+
+
+//           </div>
+
+
+//           {/* Right Column - Profile Image */}
+//           <div className="relative animate-fade-in animation-delay-300">
+//             {/* Profile Image */}
+//             <div className="relative max-w-md mx-auto">
+//               <div
+//                 className="absolute inset-0
+//               rounded-3xl bg-gradient-to-br
+//               from-primary/30 via-transparent
+//               to-primary/10 blur-2xl animate-pulse"
+//               />
+//               <div className="relative glass rounded-3xl p-2 glow-border">
+//                 <img
+//                   // src="/profile-photo.png"
+//                   // src="../../public/projects/image.png"
+//                   src={photo}
+//                   alt="Nima Farzizad"
+//                   className="w-full aspect-[4/5] object-cover rounded-2xl"
+//                 />
+
+//                 {/* Floating Badge */}
+//                 <div className="absolute -buttom-4 -right-4 glass rounded-xl px-4">
+//                   <div className="flex items-center gap-3">
+//                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+//                     <span className="text-sm font-medium">
+//                       Available for work
+//                     </span>
+//                   </div>
+//                 </div>
+//                 {/* State Badge */}
+//                 <div className="absolute -top-5 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
+//                   <div className="text-2xl font-bold text-primary">3+</div>
+//                   <div className="text-xs text-muted-foreground">
+//                     Years Exp.
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Skills Section */}
+//         <div className="mt-20 animate-fade-in animation-delay-600">
+//           <p className="text-sm text-muted-foreground mb-6 text-center">
+//             Technologies I work with
+//           </p>
+//           <div className="relative overflow-hidden">
+//             <div className="flex animate-marquee">
+//               {[...skills, ...skills].map((skill, idx) => (
+//                 <div key={idx} className="flex-shrink-0 px-8 py-4">
+//                   <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
+//                     {skill}
+//                   </span>
+//                 </div>
+//               ))}
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+
+//       <div
+//         className="absoulte buttom-8 left-1/2 -translate-x-1/2 
+//       animate-fade-in animation-delay-800"
+//       >
+//         <a
+//           href="#about"
+//           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary"
+//         >
+//           <span className="text-xs uppercase tracking-wider">Scroll</span>
+//           <ChevronDown className="w-6 h-6 animate-bounce" />
+//         </a>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Hero;
+
+
+
+
+// import { ArrowRight, Download } from "lucide-react";
+
+// import Button from "../components/Button";
+// import AnimatedBorderButton from "../components/AnimatedBorderButton";
+
+// import { useLanguage } from "../context/LanguageContext";
+
+// const Hero = () => {
+//   const { t, language } = useLanguage();
+
+//   return (
+//     <section
+//       id="home"
+//       className="relative min-h-screen flex items-center overflow-hidden"
+//     >
+//       {/* Background */}
+//       <div className="absolute inset-0">
+//         <img
+//           src="/hero-bg.avif"
+//           alt="Hero background"
+//           className="w-full h-full object-cover opacity-40"
+//         />
+
+//         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
+//       </div>
+
+//       {/* Animated particles */}
+//       <div className="absolute inset-0 overflow-hidden pointer-events-none">
+//         {[...Array(30)].map((_, index) => (
+//           <span
+//             key={index}
+//             className="absolute w-1 h-1 bg-primary/40 rounded-full animate-slow-drift"
+//             style={{
+//               left: `${Math.random() * 100}%`,
+//               top: `${Math.random() * 100}%`,
+//               animationDelay: `${Math.random() * 5}s`,
+//               animationDuration: `${5 + Math.random() * 10}s`,
+//             }}
+//           />
+//         ))}
+//       </div>
+
+//       {/* Content */}
+//       <div className="container mx-auto px-6 lg:px-8 relative z-10">
+//         <div
+//           className={`max-w-4xl ${
+//             language === "fa"
+//               ? "text-right mr-auto ml-0"
+//               : "text-left"
+//           }`}
+//         >
+//           {/* Badge */}
+//           <div
+//             className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm mb-6 ${
+//               language === "fa"
+//                 ? "flex-row-reverse"
+//                 : ""
+//             }`}
+//           >
+//             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+
+//             <span>{t("hero.badge")}</span>
+//           </div>
+
+//           {/* Greeting */}
+//           <p className="text-lg md:text-xl text-foreground/70 mb-3">
+//             {t("hero.greeting")}
+//           </p>
+
+//           {/* Name */}
+//           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4">
+//             {t("hero.name")}
+//             <span className="text-primary">.</span>
+//           </h1>
+
+//           {/* Role */}
+//           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground/80 mb-6">
+//             {t("hero.role")}
+//           </h2>
+
+//           {/* Description */}
+//           <p className="max-w-2xl text-lg md:text-xl leading-8 text-foreground/60 mb-10">
+//             {t("hero.description")}
+//           </p>
+
+//           {/* Buttons */}
+//           <div
+//             className={`flex flex-wrap gap-4 ${
+//               language === "fa"
+//                 ? "justify-end"
+//                 : "justify-start"
+//             }`}
+//           >
+//             {/* Contact */}
+//             <Button
+//               href="#contact"
+//               className="group"
+//             >
+//               {t("hero.contactButton")}
+
+//               <ArrowRight
+//                 size={18}
+//                 className={`transition-transform duration-300 ${
+//                   language === "fa"
+//                     ? "mr-2 rotate-180 group-hover:-translate-x-1"
+//                     : "ml-2 group-hover:translate-x-1"
+//                 }`}
+//               />
+//             </Button>
+
+//             {/* Download CV */}
+//             <AnimatedBorderButton
+//               href="/resume.pdf"
+//               download="Nima-Resume.pdf"
+//             >
+//               <Download size={18} />
+
+//               <span>{t("hero.resumeButton")}</span>
+//             </AnimatedBorderButton>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* Scroll indicator */}
+//       <a
+//         href="#about"
+//         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-foreground/50 hover:text-primary transition-colors"
+//       >
+//         <span className="text-xs">
+//           {t("hero.scrollDown")}
+//         </span>
+
+//         <div className="w-5 h-8 rounded-full border border-current flex justify-center pt-2">
+//           <div className="w-1 h-2 rounded-full bg-current animate-bounce" />
+//         </div>
+//       </a>
+//     </section>
+//   );
+// };
+
+// export default Hero;
+
+
+
+
+// import { ArrowRight, Download } from "lucide-react";
+
+// import Button from "../components/Button";
+// import AnimatedBorderButton from "../components/AnimatedBorderButton";
+
+// import { useLanguage } from "../context/LanguageContext";
+
+// const Hero = () => {
+//   const { t, language } = useLanguage();
+
+//   return (
+//     <section
+//       id="home"
+//       className="relative min-h-screen flex items-center overflow-hidden"
+//     >
+//       {/* Background */}
+//       <div className="absolute inset-0">
+//         <img
+//           src={`${import.meta.env.BASE_URL}hero-bg.avif`}
+//           alt="Hero background"
+//           className="w-full h-full object-cover opacity-40"
+//         />
+
+//         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
+//       </div>
+
+//       {/* Animated particles */}
+//       <div className="absolute inset-0 overflow-hidden pointer-events-none">
+//         {[...Array(30)].map((_, index) => (
+//           <span
+//             key={index}
+//             className="absolute w-1 h-1 bg-primary/40 rounded-full animate-slow-drift"
+//             style={{
+//               left: `${Math.random() * 100}%`,
+//               top: `${Math.random() * 100}%`,
+//               animationDelay: `${Math.random() * 5}s`,
+//               animationDuration: `${5 + Math.random() * 10}s`,
+//             }}
+//           />
+//         ))}
+//       </div>
+
+//       {/* Content */}
+//       <div className="container mx-auto px-6 lg:px-8 relative z-10">
+//         <div
+//           className={`max-w-4xl ${
+//             language === "fa"
+//               ? "text-right mr-auto ml-0"
+//               : "text-left"
+//           }`}
+//         >
+//           {/* Badge */}
+//           <div
+//             className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm mb-6 ${
+//               language === "fa"
+//                 ? "flex-row-reverse"
+//                 : ""
+//             }`}
+//           >
+//             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+
+//             <span>{t("hero.badge")}</span>
+//           </div>
+
+//           {/* Greeting */}
+//           <p className="text-lg md:text-xl text-foreground/70 mb-3">
+//             {t("hero.greeting")}
+//           </p>
+
+//           {/* Name */}
+//           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4">
+//             {t("hero.name")}
+//             <span className="text-primary">.</span>
+//           </h1>
+
+//           {/* Role */}
+//           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground/80 mb-6">
+//             {t("hero.role")}
+//           </h2>
+
+//           {/* Description */}
+//           <p className="max-w-2xl text-lg md:text-xl leading-8 text-foreground/60 mb-10">
+//             {t("hero.description")}
+//           </p>
+
+//           {/* Buttons */}
+//           <div
+//             className={`flex flex-wrap gap-4 ${
+//               language === "fa"
+//                 ? "justify-end"
+//                 : "justify-start"
+//             }`}
+//           >
+//             {/* Contact */}
+//             <Button
+//               href="#contact"
+//               className="group"
+//             >
+//               {t("hero.contactButton")}
+
+//               <ArrowRight
+//                 size={18}
+//                 className={`transition-transform duration-300 ${
+//                   language === "fa"
+//                     ? "mr-2 rotate-180 group-hover:-translate-x-1"
+//                     : "ml-2 group-hover:translate-x-1"
+//                 }`}
+//               />
+//             </Button>
+
+//             {/* Download CV */}
+//             <AnimatedBorderButton
+//               href={`${import.meta.env.BASE_URL}resume.pdf`}
+//               download="Nima-Resume.pdf"
+//             >
+//               <Download size={18} />
+
+//               <span>
+//                 {t("hero.resumeButton")}
+//               </span>
+//             </AnimatedBorderButton>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* Scroll indicator */}
+//       <a
+//         href="#about"
+//         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-foreground/50 hover:text-primary transition-colors"
+//       >
+//         <span className="text-xs">
+//           {t("hero.scrollDown")}
+//         </span>
+
+//         <div className="w-5 h-8 rounded-full border border-current flex justify-center pt-2">
+//           <div className="w-1 h-2 rounded-full bg-current animate-bounce" />
+//         </div>
+//       </a>
+//     </section>
+//   );
+// };
+
+// export default Hero;
+
 import photo from "../../public/projects/image.png";
 
+import { ArrowRight, Download } from "lucide-react";
 
-const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "javaScript",
-  "Node.js",
-  "GraphQL",
-  "PostgresSQL",
-  "MongoDB",
-  "SQL Server",
-  "Asp.Net Core",
-  "Redis",
-  "Docker",
-  "Aws",
-  "Vercel",
-  "Tailwind CSS",
-  "BootStrap",
-  "Jest",
-  "Git",
-  "Github Actions",
-];
+import Button from "../components/Button";
+import AnimatedBorderButton from "../components/AnimatedBorderButton";
+
+import { useLanguage } from "../context/LanguageContext";
+
 const Hero = () => {
+  const { t, language } = useLanguage();
+
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Bg */}
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center overflow-hidden"
+    >
+      {/* =====================================================
+          Background
+      ===================================================== */}
       <div className="absolute inset-0">
         <img
-          src="./hero-bg.avif"
-          alt="hero image"
+          src={`${import.meta.env.BASE_URL}hero-bg.avif`}
+          alt="Hero background"
           className="w-full h-full object-cover opacity-40"
         />
-        <div className="absolute inset-0  bg-gradient-to-b from-background/20 via-background/80 to-background"></div>
+
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
       </div>
-      <div>
-        {[...Array(30)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1.5 h-1.5 rounded-full opacity-60"
+
+      {/* =====================================================
+          Animated particles
+      ===================================================== */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(30)].map((_, index) => (
+          <span
+            key={index}
+            className="absolute w-1 h-1 bg-primary/40 rounded-full animate-slow-drift"
             style={{
-              backgroundColor: "#20B2A6",
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              animation: `slow-drift ${15 + Math.random() * 20}s 
-                        ease-in-out infinite`,
               animationDelay: `${Math.random() * 5}s`,
+              animationDuration: `${5 + Math.random() * 10}s`,
             }}
-          ></div>
+          />
         ))}
       </div>
 
-      {/* Content */}
-
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+      {/* =====================================================
+          Main Content
+      ===================================================== */}
+      <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Text Content */}
-          <div className="space-y-8">
-            <div className="animate-fade-in">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
-                <span className="w-2 h-2 bg-primary rounded-full animate-pluse" />
-                Front-End Developer . React Specialist
+
+          {/* =================================================
+              Left Column - Content
+          ================================================= */}
+          <div
+            className={`max-w-4xl ${
+              language === "fa"
+                ? "text-right mr-auto ml-0"
+                : "text-left"
+            }`}
+          >
+
+            {/* Badge */}
+            <div
+              className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm mb-6 ${
+                language === "fa"
+                  ? "flex-row-reverse"
+                  : ""
+              }`}
+            >
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+
+              <span>
+                {t("hero.badge")}
               </span>
             </div>
 
-            {/* Headline */}
-            <div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting <span className="text-primary glow-text">digital</span>
-                <br />
-                experiences with
-                <br />
-                <span className="font-serif italic font-normal text-white">
-                  precision.
-                </span>
-              </h1>
-              <p className="text-lg  text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, Im Nima Farzizad - a front-end developer specializing in
-                React, Next.js, and TypeScript. I build scalable, performat web
-                applications that users love.
-              </p>
-            </div>
+            {/* Greeting */}
+            <p className="text-lg md:text-xl text-foreground/70 mb-3">
+              {t("hero.greeting")}
+            </p>
 
-            {/* CTAs */}
-            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                <a href="#contact">Contact me </a> <ArrowRight className="w-5 h-5" />
+            {/* Name */}
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4">
+              {t("hero.name")}
+              <span className="text-primary">.</span>
+            </h1>
+
+            {/* Role */}
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground/80 mb-6">
+              {t("hero.role")}
+            </h2>
+
+            {/* Description */}
+            <p className="max-w-2xl text-lg md:text-xl leading-8 text-foreground/60 mb-10">
+              {t("hero.description")}
+            </p>
+
+            {/* =================================================
+                Buttons
+            ================================================= */}
+            <div
+              className={`flex flex-wrap gap-4 ${
+                language === "fa"
+                  ? "justify-end"
+                  : "justify-start"
+              }`}
+            >
+
+              {/* Contact Button */}
+              <Button
+                href="#contact"
+                className="group"
+              >
+                {t("hero.contactButton")}
+
+                <ArrowRight
+                  size={18}
+                  className={`transition-transform duration-300 ${
+                    language === "fa"
+                      ? "mr-2 rotate-180 group-hover:-translate-x-1"
+                      : "ml-2 group-hover:translate-x-1"
+                  }`}
+                />
               </Button>
-              <a
+
+              {/* Download CV */}
+              <AnimatedBorderButton
                 href={`${import.meta.env.BASE_URL}resume.pdf`}
                 download="Nima-Resume.pdf"
-                className="inline-block"
               >
-                <AnimatedBorderButton>
-                  <Download className="w-5 h-5" />
-                  Download CV
-                </AnimatedBorderButton>
-              </a>
+                <Download size={18} />
+
+                <span>
+                  {t("hero.resumeButton")}
+                </span>
+              </AnimatedBorderButton>
+
             </div>
-
-
-            {/* Social Links */}
-            {/* <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-              <span className="text-sm text-muted-foreground">Follow me: </span> */}
-            {/* {[
-                { icon: "Github", href: "#" },
-                { icon: "Linkedin", href: "#" },
-                { icon: "Twitter", href: "#" },
-              ].map((social, idx) => (
-                <a
-                  key={idx}
-                  href={social.href}
-                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
-                >
-                  {<social.icon className="w-5 h-5" />}
-                </a>
-              ))} */}
-            {/* </div> */}
-
-
           </div>
 
-
-          {/* Right Column - Profile Image */}
+          {/* =================================================
+              Right Column - Profile Image
+          ================================================= */}
           <div className="relative animate-fade-in animation-delay-300">
-            {/* Profile Image */}
+
+            {/* Profile Image Container */}
             <div className="relative max-w-md mx-auto">
+
+              {/* Glow Background */}
               <div
-                className="absolute inset-0
-              rounded-3xl bg-gradient-to-br
-              from-primary/30 via-transparent
-              to-primary/10 blur-2xl animate-pulse"
+                className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse"
               />
+
+              {/* Glass Card */}
               <div className="relative glass rounded-3xl p-2 glow-border">
+
                 <img
-                  // src="/profile-photo.png"
-                  // src="../../public/projects/image.png"
                   src={photo}
                   alt="Nima Farzizad"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />
 
-                {/* Floating Badge */}
-                <div className="absolute -buttom-4 -right-4 glass rounded-xl px-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                    <span className="text-sm font-medium">
-                      Available for work
-                    </span>
-                  </div>
-                </div>
-                {/* State Badge */}
-                <div className="absolute -top-5 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">3+</div>
-                  <div className="text-xs text-muted-foreground">
-                    Years Exp.
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Skills Section */}
-        <div className="mt-20 animate-fade-in animation-delay-600">
-          <p className="text-sm text-muted-foreground mb-6 text-center">
-            Technologies I work with
-          </p>
-          <div className="relative overflow-hidden">
-            <div className="flex animate-marquee">
-              {[...skills, ...skills].map((skill, idx) => (
-                <div key={idx} className="flex-shrink-0 px-8 py-4">
-                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
-                    {skill}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 
-      <div
-        className="absoulte buttom-8 left-1/2 -translate-x-1/2 
-      animate-fade-in animation-delay-800"
+      {/* =====================================================
+          Scroll Indicator
+      ===================================================== */}
+      <a
+        href="#about"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-foreground/50 hover:text-primary transition-colors"
       >
-        <a
-          href="#about"
-          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary"
-        >
-          <span className="text-xs uppercase tracking-wider">Scroll</span>
-          <ChevronDown className="w-6 h-6 animate-bounce" />
-        </a>
-      </div>
+        <span className="text-xs">
+          {t("hero.scrollDown")}
+        </span>
+
+        <div className="w-5 h-8 rounded-full border border-current flex justify-center pt-2">
+          <div className="w-1 h-2 rounded-full bg-current animate-bounce" />
+        </div>
+      </a>
+
     </section>
   );
 };
